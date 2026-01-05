@@ -3,22 +3,42 @@ function conversion() {
     let bin = document.getElementById("binaire");
     let hex = document.getElementById("hexadecimal");
 
-    if (dec.value !== "") {
-        bin.value = parseInt(dec.value).toString(2);
-        hex.value = parseInt(dec.value).toString(16).toUpperCase();
+    let decVal = dec.value.trim();
+    let binVal = bin.value.trim();
+    let hexVal = hex.value.trim();
+
+    if (decVal !== "") {
+        let number = parseInt(decVal, 10);
+        if (isNaN(number)) {
+            alert("Valeur décimale invalide !");
+            return;
+        }
+        bin.value = number.toString(2);
+        hex.value = number.toString(16).toUpperCase();
     }
-    else if (bin.value !== "") {
-        dec.value = parseInt(bin.value, 2);
-        hex.value = parseInt(bin.value, 2).toString(16).toUpperCase();
+    else if (binVal !== "") {
+        let number = parseInt(binVal, 2);
+        if (isNaN(number)) {
+            alert("Valeur binaire invalide !");
+            return;
+        }
+        dec.value = number;
+        hex.value = number.toString(16).toUpperCase();
     }
-    else if (hex.value !== "") {
-        dec.value = parseInt(hex.value, 16);
-        bin.value = parseInt(hex.value, 16).toString(2);
+    else if (hexVal !== "") {
+        let number = parseInt(hexVal, 16);
+        if (isNaN(number)) {
+            alert("Valeur hexadécimale invalide !");
+            return;
+        }
+        dec.value = number;
+        bin.value = number.toString(2);
     }
     else {
         alert("Veuillez remplir au moins une case !");
     }
 }
+
 
 function clearAll() {
     document.getElementById("decimal").value = "";
@@ -56,4 +76,5 @@ function moveButton(event) {
 
 function closeOverlay() {
     document.getElementById('secret-overlay').remove();
+
 }
