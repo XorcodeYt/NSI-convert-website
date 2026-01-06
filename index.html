@@ -1,53 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Convertisseur</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <h1>Convertisseur de Nombres</h1>
+        <p>Decimal Binaire Hexadecimal</p>
+    </header>
 
-<header>
-    <h1>Convertisseur de Nombres</h1>
-    <p>Décimal  Binaire  Hexadecimal</p>
-</header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="infos.html">Infos</a>
+    </nav>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="infos.html">Infos</a>
-</nav>
+    <main id="mainContent">
+        <div class="converter-card">
+            <form Name='Form'>
+                <div class="input-group">
+                    <label for="decimal">
+                        Decimal <span class="base-label">Base 10</span>
+                    </label>
+                    <input type="text" id="decimal" name="nombre" placeholder="Entrez un nombre decimal">
+                </div>
 
-<main id="mainContent">
-    <div class="converter-card">
-        <div class="input-group">
-            <label>Decimal <span class="base-label">Base 10</span></label>
-            <input type="number" id="decimal" placeholder="Entrez un nombre decimal">
+                <div class="input-group">
+                    <label for="binaire">
+                        Binaire <span class="base-label">Base 2</span>
+                    </label>
+                    <input type="text" id="binaire" name="binaire" placeholder="Entrez un nombre binaire">
+                </div>
+
+                <div class="input-group">
+                    <label for="hexadecimal">
+                        Hexadecimal <span class="base-label">Base 16</span>
+                    </label>
+                    <input type="text" id="hexadecimal" name="hexadecimal" placeholder="Entrez un nombre hexadecimal">
+                </div>
+
+                <div>
+                    <button type="button" onclick="conversion()">Convertir</button>
+                    <button type="button" class="btn-clear" onclick="clearAll()">Effacer</button>
+                </div>
+            </form>
         </div>
+    </main>
 
-        <div class="input-group">
-            <label>Binaire <span class="base-label">Base 2</span></label>
-            <input type="text" id="binaire" placeholder="Entrez un nombre binaire">
-        </div>
+    <div class="secret-btn" onclick="secretFunction()">?</div>
 
-        <div class="input-group">
-            <label>Hexadecimal <span class="base-label">Base 16</span></label>
-            <input type="text" id="hexadecimal" placeholder="Entrez un nombre hexadecimal">
-        </div>
+    <footer>
+        <p><em>Copyright © 2025 NSI groupe B All rights reserved</em></p>
+        <p><em>Copyright © 2025 </em> <a href="https://xorcode.site">Xorcode</a></p>
+    </footer>
 
-        <button onclick="conversion()">Convertir</button>
-        <button class="btn-clear" onclick="clearAll()">Effacer</button>
-    </div>
-</main>
-
-<div class="secret-btn" onclick="secretFunction()">?</div>
-
-<footer>
-    <p><em>Copyright © 2025 NSI groupe B All rights reserved</em></p>
-    <p><em>Copyright © 2025 </em> <a href="https://xorcode.site">Xorcode</a></p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
