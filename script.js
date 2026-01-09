@@ -53,7 +53,7 @@ function secretFunction() {
     overlay.id = 'secret-overlay';
     overlay.innerHTML = `
         <div style="position: relative;">
-            <img src="https://media1.tenor.com/m/f5khlE2M6p8AAAAd/shreck.gif" alt="secret">
+            <img src="https://media1.tenor.com/m/6WqM25GkSKcAAAAd/shrek-dance.gif" alt="secret">
             <button class="close-btn" onmouseover="moveButton(event)" onclick="activateShrekMode()">×</button>
         </div>
     `;
