@@ -65,7 +65,7 @@ function moveButton(event) {
         const btn = event.target;
         const btnWidth = btn.offsetWidth;
         const btnHeight = btn.offsetHeight;
-        
+
         const maxX = window.innerWidth - btnWidth - 20;
         const maxY = window.innerHeight - btnHeight - 20;
         
@@ -199,10 +199,16 @@ function activateShrekMode() {
         
         .secret-btn {
             background: rgba(107, 157, 71, 0) !important;
+            color: rgba(107, 157, 71, 0) !important;
         }
         
         .secret-btn:hover {
-            background: #6b9d47 !important;
+            background:rgba(107, 157, 71, 0) !important;
+            color: rgba(107, 157, 71, 0) !important;
+        }
+
+        footer a:hover {
+            color: #6b9d47;
         }
     `;
     document.head.appendChild(shrekStyle);

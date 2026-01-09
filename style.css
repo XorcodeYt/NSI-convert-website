@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    background: #2c3e50;
+    background: #434e74;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@ header {
     text-align: center;
     padding: 30px 20px;
     color: white;
-    background: #34495e;
+    background: #434e74;
 }
 
 header h1 {
@@ -32,10 +32,10 @@ header p {
 
 /* Navigation */
 nav {
-    background: #34495e;
+    background: #8cbdec;
     padding: 12px;
     text-align: center;
-    border-bottom: 2px solid #e74c3c;
+    border-bottom: 2px solid #fff;
 }
 
 nav a {
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e74c3c;
+    color: #1a588b;
 }
 
 /* Main */
@@ -75,7 +75,7 @@ main {
 label {
     display: block;
     font-weight: bold;
-    color: #2c3e50;
+    color: #889bd3;
     margin-bottom: 5px;
     font-size: 0.9em;
 }
@@ -83,7 +83,7 @@ label {
 .base-label {
     display: inline-block;
     padding: 2px 8px;
-    background: #34495e;
+    background: #889bd3;
     color: white;
     border-radius: 3px;
     font-size: 0.7em;
@@ -101,15 +101,15 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #e74c3c;
+    border-color: #120064;
 }
 
 /* Boutons */
 button {
     width: 100%;
     padding: 12px;
-    background: #e74c3c;
-    color: white;
+    background: #8cbdec;
+    color: #fff;
     border: none;
     border-radius: 3px;
     font-size: 1em;
@@ -120,16 +120,16 @@ button {
 }
 
 button:hover {
-    background: #c0392b;
+    background: #57a0e6;
 }
 
 .btn-clear {
-    background: #95a5a6;
+    background: #577b9d;
     margin-top: 10px;
 }
 
 .btn-clear:hover {
-    background: #7f8c8d;
+    background: #3a6186;
 }
 
 /* Footer */
@@ -147,7 +147,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #e74c3c;
+    color: #1a588b;
 }
 
 /* Page Info */
@@ -163,7 +163,7 @@ footer a:hover {
 .info-page h1 {
     color: #2c3e50;
     margin-bottom: 20px;
-    border-bottom: 3px solid #e74c3c;
+    border-bottom: 3px solid #8cbdec;
     padding-bottom: 10px;
 }
 
@@ -176,17 +176,17 @@ footer a:hover {
     padding: 12px;
     margin: 10px 0;
     background: #ecf0f1;
-    border-left: 3px solid #e74c3c;
+    border-left: 3px solid #8cbdec;
 }
 
 .info-page li a {
-    color: #e74c3c;
+    color: #8cbdec;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .info-page li a:hover {
-    color: #c0392b;
+    color: #1a588b;
     text-decoration: underline;
 }
 
@@ -194,7 +194,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px;
-    background: #e74c3c;
+    background: #8cbdec;
     color: white;
     text-decoration: none;
     border-radius: 3px;
@@ -202,7 +202,7 @@ footer a:hover {
 }
 
 .info-page > a:hover {
-    background: #c0392b;
+    background: #8cbdec;
 }
 
 /* Bouton secret */
@@ -224,7 +224,7 @@ footer a:hover {
 }
 
 .secret-btn:hover {
-    background: #e74c3c;
+    background: #3ca3e7;
     color: white;
     transform: scale(1.2);
 }
